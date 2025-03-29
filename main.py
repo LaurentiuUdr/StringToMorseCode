@@ -1,3 +1,11 @@
+from logo import LOGO
+
+print(LOGO)
+print ("Menu:\n"
+        "     Press 1 Translate from text to morse code\n"
+        "     Press 2 Translate from morse code to text\n")
+
+direction = int(input("Choose an option: "))
 message = input("Type the message:\n").upper() # input message
 
 # morse code dictionary
@@ -46,6 +54,10 @@ def translate_morse_to_string(param_morse_message):
                 string_message += key
     print(string_message)
 
-# translate_string_to_morse(message)
 
-translate_morse_to_string(message)
+if direction == 1:
+    translate_string_to_morse(message)
+elif direction == 2:
+    translate_morse_to_string(message)
+else:
+    print("Invalid selection")
