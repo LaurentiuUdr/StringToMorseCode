@@ -14,7 +14,7 @@ MENU =  ("\nMenu:\n"
 
 
 # morse code dictionary
-morse_code_dict = {
+morse_dict = {
     # letters
     'A': '.-', 'B': '-...', 'C': '-.-.',
     'D': '-..', 'E': '.', 'F': '..-.',
